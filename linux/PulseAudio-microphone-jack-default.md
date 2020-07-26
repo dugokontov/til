@@ -18,6 +18,7 @@ state.unplugged = yes
 
 ### What does this mean?
 `required-any = any` was present in this configuration before. If I understand this property correctly, it needs to be there to make this path valid.
+
 `state.unplugged = yes`: this tells that when jack is unplugged, this port will become available. Since my card can't register state where my jack is plugged, this is the behavior I wanted.
 
 ### Debugging PulseAudio

@@ -1,9 +1,7 @@
 ## Type predicate functions
+[Type predicate functions](https://www.typescriptlang.org/docs/handbook/advanced-types.html#using-type-predicates) can be used to filter out `null` and/or `undefined` values and have typescript guess correct type.
 
 ### Why?
-You can use [type predicate functions](https://www.typescriptlang.org/docs/handbook/advanced-types.html#using-type-predicates) to filter out `null` and/or `undefined` values and have typescript guess correct type.
-
-### How?
 For example if you have some `map` function that could return `undefined` for some values, and you wanted to return only not `undefined` values, code would look like this.
 
 ```ts
@@ -19,6 +17,8 @@ const results = ['a', 'b', 'c', 'd']
 ```
 
 Even though we have a filter function that explicitly filters out `undefined` values, typescript still thinks that resulting type for results is `(number | undefined)[]`.
+
+### How?
 
 To cope with this we can replace arrow function passed to the filter with the function whose return type is "type predicate". This function has to return boolean, even though we use `functionParameter as type` syntax to specify return type.
 

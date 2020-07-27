@@ -12,7 +12,7 @@ This is what I found out how some array values are casted to number in javascrip
 +[1, 2]; // NaN
 ```
 
-### Why?
+### How it's done?
 Array is an object. [ToNumber](http://es5.github.io/#x9.3) operation defines that object has [ToPrimitive](http://es5.github.io/#x9.1) called upon. This operation calls `[[DefaultValue]]` with hint `Number`. And `[[DefaultValue]]` method with hint `Number` calls `valueOf` or `toString`, whichever returns primitive value.
 
 Steps to convert Array to Number would be:

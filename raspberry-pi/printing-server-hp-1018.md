@@ -31,6 +31,9 @@ make
 ```sh
 sudo make install install-hotplug cups
 ```
+
+If you get error message `Error: system-config-printer-udev is installed`, remove it with the suggested command (eg. `sudo apt-get remove system-config-printer-udev`).
+
 6. Plug in the HP Laserjet 1018 printer, and switch it on.
 Orange light should flash and the printer motor will run for a few seconds, indicating firmware has been downloaded successfully.
 Verify it has with:
@@ -63,6 +66,7 @@ lp text.txt
 ```sh
 sudo apt-get install samba
 ```
+If asked, select that you don't want to use DHCP to get info for SAMBA.
 
 2. Enable printer sharing
 ```sh
@@ -74,8 +78,4 @@ guest ok = yes
 ```
 Restart raspberry.
 
-3. Install printer as network printer from Ubuntu or Linux.
-
-
-
-
+3. Install printer as network printer from Linux or Windows.

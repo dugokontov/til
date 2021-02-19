@@ -9,9 +9,9 @@ node index.js
 ```
 Install nodemon and add script in `package.json`
 ```json
-"server": "nodemon index.js",
+"start": "nodemon index.js",
 ```
 and then start it using
 ```sh
-yarn server
+yarn start
 ```

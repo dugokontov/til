@@ -5,7 +5,7 @@
 After doing ssh on raspberry pi, run
 
 ``` bash
-$ curl -sSL https://install.pi-hole.net | sudo bash
+$ curl -sSL https://install.pi-hole.net | bash
 ```
 
 Source: https://github.com/pi-hole/pi-hole/#one-step-automated-install

@@ -18,3 +18,7 @@ Param explanation:
  - `of`: output file, where to store this image
  - `bs`: block size
  - `status`: show progress. This param requires `dd` version >=8.24
+
+### Reference
+ - https://www.cyberciti.biz/faq/linux-copy-clone-usb-stick-including-partitions/
+ - https://www.cyberciti.biz/faq/linux-unix-dd-command-show-progress-while-coping/

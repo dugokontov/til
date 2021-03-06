@@ -19,8 +19,11 @@ At the time the script is started, `node` is not in the path. To add it, simply 
 PATH=$PATH:/home/pi/.nvm/versions/node/v14.15.5/bin
 ```
 ### Start server with logging
-Now just run the script and specify where to log outputs.
+Now just run the script and specify where to log outputs (stdout and stderr).
 ```sh
-cd /path/to/node/project
-npm start > /var/log/app-regular.log 2> app-error.log &
+nodemon -w  /path/to/node/project  /path/to/node/project/index.js \
+   >  /path/to/node/project/app-regular.log \ # stdout
+  2>  /path/to/node/project/app-error.log &   # stderr
 ```
+### Symlink error
+If you get error that nodemon couldn't start because of circular symlink, then check if `-w` flag is used when running with nodemon.

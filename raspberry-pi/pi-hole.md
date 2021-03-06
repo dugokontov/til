@@ -15,3 +15,6 @@ After installation, configure local network router:
 
  * Make sure raspberry pi always gets the same IP address
  * Configuring DHCP and set raspberry's pi IP as a DNS
+
+### Some application on the phone still show ads
+This is because ads can be cached by the application. From the phone settings -> App, select your application and clear cache/data.

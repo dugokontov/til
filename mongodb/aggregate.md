@@ -8,7 +8,7 @@ Some use cases I run into:
 
 - Filter after mapping fields
 - Complex filters (eg. number of keys in object)
-- Combine data from other collections (using `$lookup`)
+- Combine data from other collections (using [`$lookup`](/mongodb/combine-data-from-two-collections.md))
 
 ### How?
 

@@ -23,6 +23,15 @@ tar zxf foo2zjs.tar.gz
 cd foo2zjs
 make
 ```
+
+> **[Alternative](https://askubuntu.com/questions/1345155/how-to-install-foo2zjs-tar-gz-when-website-doesnt-work/1345564#1345564)**: If there is an error with downloading `.tar` file (eg. http://foo2zjs.rkkda.com is down), then download source code from [github](https://github.com/koenkooi/foo2zjs) and run `make` on that code. Note that in this case you don't need to download image for the printer (`./getweb 1018`) as it is already present in repository. So, just skip step 4 in that case.
+
+```sh
+git clone https://github.com/koenkooi/foo2zjs.git
+cd foo2zjs
+make
+```
+
 4. Get the printer firmware:
 ```sh
 ./getweb 1018

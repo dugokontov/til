@@ -89,3 +89,8 @@ router.get("/:imageId", async (req, res) => {
   res.end(result.image);
 });
 ```
+
+## References
+
+ * https://stackoverflow.com/questions/31468221/node-return-image-stored-in-sqlite-blob
+ * https://github.com/mapbox/node-sqlite3/blob/master/test/blob.test.js

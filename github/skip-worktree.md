@@ -6,7 +6,7 @@ This command will tell `git` to add a `skip-worktree` flag to the object on a pa
 
 This is very useful in situation where you need to make local changes to some file (usually configuration) that can't be committed or ignored using `.gitignore` (because it needs to be part of the repository).
 
-Often issue this command is designed to solve is when you end up having config file(s) with local specific settings that are always unstaged. They show up in `git status` and because of that tend to be wrongly committed as a part of the PR.
+Often issue this command is designed to solve is when you end up having config file(s) with local specific settings that are always unstaged. They show up in `git status` and because of that tend to be wrongly committed as a part of a PR.
 
 ### How?
 

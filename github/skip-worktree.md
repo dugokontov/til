@@ -13,7 +13,7 @@ Often issue this command is designed to solve is when you end up having config f
 Running:
 
 ```sh
-`git update-index --skip-worktree` path/to/config/file
+git update-index --skip-worktree path/to/config/file
 ```
 
 will ignore local changes to specified file.

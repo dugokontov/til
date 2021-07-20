@@ -1,4 +1,4 @@
-## Copy using over ssh using scp
+## Copy over ssh using scp
 
 ### How?
 

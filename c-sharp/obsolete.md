@@ -18,3 +18,8 @@ public int GetNumberOfRecords()
 }
 ```
 
+### References
+
+ - Don't use Obsolete without message: http://notherdev.blogspot.com/2013/02/obsolete-should-be-obsolete.html
+ - Official documentation: https://docs.microsoft.com/en-us/dotnet/api/system.obsoleteattribute?view=net-5.0
+
